@@ -53,16 +53,13 @@ function countdown() {
     
     countdown()
     }, 1000)
-
 }
-
 
 
 Button.Play.onclick = function(){
   playPause ()
-  Button.SetTimer.classList.toggle('hide')
-  Button.Reset.classList.toggle('hide')
-
+  Button.SetTimer.classList.add('hide')
+  Button.Reset.classList.remove('hide')
   countdown()
 }
 
